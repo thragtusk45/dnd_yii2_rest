@@ -10,13 +10,27 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
-    'modules' => [],
-    'components' => [
-        'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+    'defaultRoute' => 'admin/default/index',
+    'bootstrap' => ['gii'],
+    'modules' => [
+        'admin' => [
+            'class' => 'backend\modules\admin\Module'
         ],
+
+        'users' => [
+            'controllerNamespace' => 'vova07\users\controllers\backend'
+        ],
+    ],
+
+    'components' => [
+        'urlManager' => [
+            'rules' => [
+                '' => 'site/index',
+                '<_m>/<_c>/<_a>' => '<_m>/<_c>/<_a>',
+                '<_c>/<_a>' => '<_c>/<_a>',
+            ]
+        ],
+
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

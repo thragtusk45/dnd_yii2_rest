@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cea7d8284021060550e1fd14b9fa178d",
+    "hash": "e92b8bef4963f0438b8fa47c8ce3f633",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -99,6 +99,31 @@
                 "jquery",
                 "library"
             ]
+        },
+        {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.11.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "396781474d936959061271505f506b78398fe6a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/396781474d936959061271505f506b78398fe6a2",
+                "reference": "396781474d936959061271505f506b78398fe6a2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "jquery-ui.js"
+                ],
+                "bower-asset-ignore": []
+            }
         },
         {
             "name": "bower-asset/jquery.inputmask",
@@ -316,6 +341,42 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "rubaxa/fileapi",
+            "version": "0.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RubaXa/jquery.fileapi.git",
+                "reference": "99f914fbe7060859436f1bbc1cf2d81e1ac15cb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RubaXa/jquery.fileapi/zipball/99f914fbe7060859436f1bbc1cf2d81e1ac15cb5",
+                "reference": "99f914fbe7060859436f1bbc1cf2d81e1ac15cb5",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Lebedev",
+                    "email": "ibnRubaXa@gmail.com"
+                }
+            ],
+            "description": "jQuery plugin for FileAPI (multiupload, image upload, crop, resize and etc.)",
+            "homepage": "https://github.com/RubaXa/jquery.fileapi",
+            "keywords": [
+                "file upload",
+                "fileapi",
+                "jquery",
+                "multiupload",
+                "upload"
+            ],
+            "time": "2014-10-29 09:15:36"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.3.1",
             "source": {
@@ -366,6 +427,597 @@
                 "mailer"
             ],
             "time": "2014-12-05 14:17:14"
+        },
+        {
+            "name": "vova07/yii2-fileapi-widget",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-fileapi-widget.git",
+                "reference": "b13ed129355cf869f8edb4c231187bf14df02e41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-fileapi-widget/zipball/b13ed129355cf869f8edb4c231187bf14df02e41",
+                "reference": "b13ed129355cf869f8edb4c231187bf14df02e41",
+                "shasum": ""
+            },
+            "require": {
+                "rubaxa/fileapi": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "vova07\\fileapi\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The FileAPI widget for Yii2 framework.",
+            "keywords": [
+                "fileapi",
+                "files",
+                "multiupload",
+                "upload",
+                "widget",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2014-12-18 14:54:52"
+        },
+        {
+            "name": "vova07/yii2-imperavi-widget",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-imperavi-widget.git",
+                "reference": "d660ee278e7ad20148482970d5e233a96810be94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-imperavi-widget/zipball/d660ee278e7ad20148482970d5e233a96810be94",
+                "reference": "d660ee278e7ad20148482970d5e233a96810be94",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "vova07\\imperavi\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                },
+                {
+                    "name": "Veaceslav Medvedev",
+                    "email": "slavcopost@gmail.com"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/"
+                }
+            ],
+            "description": "The imperavi redactor widget for Yii framework.",
+            "keywords": [
+                "Redactor",
+                "imperavi",
+                "widget",
+                "wysiwyg",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2014-12-15 12:56:51"
+        },
+        {
+            "name": "vova07/yii2-select2-widget",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-select2-widget.git",
+                "reference": "16fdda7325c6d3feb1ca26ecee87259e6bf4ae89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-select2-widget/zipball/16fdda7325c6d3feb1ca26ecee87259e6bf4ae89",
+                "reference": "16fdda7325c6d3feb1ca26ecee87259e6bf4ae89",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "vova07\\select2\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The select2 widget for Yii framework.",
+            "keywords": [
+                "select",
+                "select 2",
+                "select2",
+                "widget",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2014-09-09 08:02:48"
+        },
+        {
+            "name": "vova07/yii2-start",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start.git",
+                "reference": "b2d6f32cc11af74fd21e7a9463f0d2350ea57e61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start/zipball/b2d6f32cc11af74fd21e7a9463f0d2350ea57e61",
+                "reference": "b2d6f32cc11af74fd21e7a9463f0d2350ea57e61",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "vova07/yii2-start-admin-module": "*",
+                "vova07/yii2-start-base": "*",
+                "vova07/yii2-start-blogs-module": "*",
+                "vova07/yii2-start-comments-module": "*",
+                "vova07/yii2-start-rbac-module": "*",
+                "vova07/yii2-start-site-module": "*",
+                "vova07/yii2-start-themes": "*",
+                "vova07/yii2-start-users-module": "*",
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-bootstrap": "*"
+            },
+            "require-dev": {
+                "yiisoft/yii2-debug": "*",
+                "yiisoft/yii2-gii": "*"
+            },
+            "type": "project",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vasile Crudu",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "Yii2-Start it's a small Yii 2 application template for your fast project start.",
+            "homepage": "http://yii2-start.find-freelancer.pro",
+            "keywords": [
+                "application",
+                "bootstrap",
+                "start",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2014-10-29 13:49:03"
+        },
+        {
+            "name": "vova07/yii2-start-admin-module",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-admin-module.git",
+                "reference": "8949e3383062e2ec68056da8da1eb67944070839"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-admin-module/zipball/8949e3383062e2ec68056da8da1eb67944070839",
+                "reference": "8949e3383062e2ec68056da8da1eb67944070839",
+                "shasum": ""
+            },
+            "require": {
+                "vova07/yii2-start": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\admin\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\admin\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The admin module for Yii2-Start application.",
+            "keywords": [
+                "admin",
+                "module",
+                "modules",
+                "start",
+                "yii 2",
+                "yii2",
+                "yii2-start"
+            ],
+            "time": "2014-10-12 19:30:59"
+        },
+        {
+            "name": "vova07/yii2-start-base",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-base.git",
+                "reference": "8e283db0d14eb9de2e47afdb4e483a3533579059"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-base/zipball/8e283db0d14eb9de2e47afdb4e483a3533579059",
+                "reference": "8e283db0d14eb9de2e47afdb4e483a3533579059",
+                "shasum": ""
+            },
+            "require": {
+                "vova07/yii2-start": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\base\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The base extension of Yii2-Start application.",
+            "keywords": [
+                "base",
+                "core",
+                "start",
+                "yii 2",
+                "yii2",
+                "yii2-start"
+            ],
+            "time": "2014-10-12 19:31:13"
+        },
+        {
+            "name": "vova07/yii2-start-blogs-module",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-blogs-module.git",
+                "reference": "28d6348dad38ac2091368ee69fc19dd96bd5594a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-blogs-module/zipball/28d6348dad38ac2091368ee69fc19dd96bd5594a",
+                "reference": "28d6348dad38ac2091368ee69fc19dd96bd5594a",
+                "shasum": ""
+            },
+            "require": {
+                "vova07/yii2-fileapi-widget": "*",
+                "vova07/yii2-imperavi-widget": "*",
+                "vova07/yii2-start": "*",
+                "vova07/yii2-start-base": "*",
+                "yiisoft/yii2-jui": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\blogs\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\blogs\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The blogs module for Yii2-start application.",
+            "keywords": [
+                "blogs",
+                "module",
+                "yii 2",
+                "yii2",
+                "yii2-start"
+            ],
+            "time": "2014-12-08 11:49:01"
+        },
+        {
+            "name": "vova07/yii2-start-comments-module",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-comments-module.git",
+                "reference": "7dccd77fafe53f8d3079a044da655ec554f50cc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-comments-module/zipball/7dccd77fafe53f8d3079a044da655ec554f50cc7",
+                "reference": "7dccd77fafe53f8d3079a044da655ec554f50cc7",
+                "shasum": ""
+            },
+            "require": {
+                "vova07/yii2-start": "*",
+                "vova07/yii2-start-base": "*",
+                "vova07/yii2-start-users-module": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\comments\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\comments\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The comments module for Yii2-Start application.",
+            "keywords": [
+                "comments",
+                "module",
+                "yii 2",
+                "yii2",
+                "yii2-start"
+            ],
+            "time": "2014-10-13 07:32:38"
+        },
+        {
+            "name": "vova07/yii2-start-rbac-module",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-rbac-module.git",
+                "reference": "87e3b8e00069564b52bfe1311a385f7729386bfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-rbac-module/zipball/87e3b8e00069564b52bfe1311a385f7729386bfb",
+                "reference": "87e3b8e00069564b52bfe1311a385f7729386bfb",
+                "shasum": ""
+            },
+            "require": {
+                "vova07/yii2-select2-widget": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\rbac\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\rbac\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The RBAC module for Yii2-Start application.",
+            "keywords": [
+                "management",
+                "module",
+                "modules",
+                "rbac",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2014-10-13 10:48:36"
+        },
+        {
+            "name": "vova07/yii2-start-site-module",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-site-module.git",
+                "reference": "b19853f96e8b3c8f0fc633755890f51d1950dc32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-site-module/zipball/b19853f96e8b3c8f0fc633755890f51d1950dc32",
+                "reference": "b19853f96e8b3c8f0fc633755890f51d1950dc32",
+                "shasum": ""
+            },
+            "require": {
+                "vova07/yii2-start": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\site\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\site\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The site module for Yii2-Start application.",
+            "keywords": [
+                "module",
+                "modules",
+                "site",
+                "start",
+                "yii 2",
+                "yii2",
+                "yii2-start"
+            ],
+            "time": "2014-12-01 15:27:49"
+        },
+        {
+            "name": "vova07/yii2-start-themes",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-themes.git",
+                "reference": "b682927eeab51aebbce30ba2395230df1f965814"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-themes/zipball/b682927eeab51aebbce30ba2395230df1f965814",
+                "reference": "b682927eeab51aebbce30ba2395230df1f965814",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\themes\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\themes\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The themes extension for Yii2-Start application.",
+            "keywords": [
+                "start",
+                "template",
+                "themes",
+                "yii 2",
+                "yii2",
+                "yii2-start"
+            ],
+            "time": "2014-12-07 11:49:48"
+        },
+        {
+            "name": "vova07/yii2-start-users-module",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-start-users-module.git",
+                "reference": "d1ec9e1d1f847d6b8db9582cd1e5e588aca9f773"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-start-users-module/zipball/d1ec9e1d1f847d6b8db9582cd1e5e588aca9f773",
+                "reference": "d1ec9e1d1f847d6b8db9582cd1e5e588aca9f773",
+                "shasum": ""
+            },
+            "require": {
+                "vova07/yii2-fileapi-widget": "*",
+                "vova07/yii2-start": "*",
+                "vova07/yii2-start-rbac-module": "*",
+                "yiisoft/yii2-bootstrap": "*",
+                "yiisoft/yii2-swiftmailer": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "vova07\\users\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vova07\\users\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "The users module for Yii2-Start application.",
+            "keywords": [
+                "Users",
+                "account",
+                "management",
+                "module",
+                "modules",
+                "profile",
+                "profiles",
+                "user",
+                "yii 2",
+                "yii2",
+                "yii2-start"
+            ],
+            "time": "2014-12-13 11:37:31"
         },
         {
             "name": "yiisoft/yii2",
@@ -544,6 +1196,52 @@
             "keywords": [
                 "composer",
                 "extension installer",
+                "yii2"
+            ],
+            "time": "2014-12-07 16:42:41"
+        },
+        {
+            "name": "yiisoft/yii2-jui",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-jui.git",
+                "reference": "394212b03c8467284eb485a7016245cc9071c2af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/394212b03c8467284eb485a7016245cc9071c2af",
+                "reference": "394212b03c8467284eb485a7016245cc9071c2af",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-ui": "1.11.*@stable",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\jui\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                }
+            ],
+            "description": "The Jquery UI extension for the Yii framework",
+            "keywords": [
+                "jQuery UI",
                 "yii2"
             ],
             "time": "2014-12-07 16:42:41"

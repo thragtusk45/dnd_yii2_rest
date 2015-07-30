@@ -12,10 +12,18 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+        'urlManager' => [
+            'rules' => [
+                '' => 'site/index',
+//                '<_a:(about|index|contact)>' => 'site/<_a>',
+                '<_m>/<_c>/<_a>' => '<_m>/<_c>/<_a>',
+                '<_c>/<_a>' => '<_c>/<_a>',
+                // General rules
+               // '<_m:[\w\-]+>/<_sm:[\w\-]+>/<_c:[\w\-]+>/<_a:[\w\-]+>' => '<_m>/<_sm>/<_c>/<_a>',
+                '<_m:[\w\-]+>/<_c:[\w\-]+>/<_a:[\w\-]+>' => '<_m>/<_c>/<_a>',
+            ]
         ],
+
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

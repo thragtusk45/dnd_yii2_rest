@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use vova07\users\models\backend\User;
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -72,6 +73,7 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
+
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }

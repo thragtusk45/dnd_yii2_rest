@@ -17,7 +17,9 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*"
+        "yiisoft/yii2-swiftmailer": "*",
+        "vova07/yii2-start-users-module": "*",
+        "vova07/yii2-start-blogs-module": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
