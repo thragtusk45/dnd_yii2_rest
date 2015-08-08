@@ -6,6 +6,9 @@ return [
             'class' => 'vova07\users\Module',
             'requireEmailConfirmation' => false,
         ],
+        'tables' => [
+            'class' => 'common\modules\info\Info',
+        ],
     ],
     'components' => [
         'cache' => [
