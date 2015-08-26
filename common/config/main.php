@@ -6,9 +6,12 @@ return [
             'class' => 'vova07\users\Module',
             'requireEmailConfirmation' => false,
         ],
-        'tables' => [
-            'class' => 'common\modules\info\Info',
-        ],
+//        'tables' => [
+//            'class' => 'common\modules\info\Info',
+//        ],
+//        'tools' => [
+//            'class' => 'common\modules\tools\Tools',
+//        ],
     ],
     'components' => [
         'cache' => [

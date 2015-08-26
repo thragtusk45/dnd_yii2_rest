@@ -3,4 +3,13 @@ return [
     'adminEmail' => 'admin@example.com',
     'supportEmail' => 'support@example.com',
     'user.passwordResetTokenExpire' => 3600,
+    'races' => [
+        'human',
+        'elf',
+        'dwarf',
+        'gnome',
+        'halfling',
+        'orc',
+    ],
+
 ];

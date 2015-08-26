@@ -16,7 +16,9 @@ return [
         'admin' => [
             'class' => 'backend\modules\admin\Module'
         ],
-
+        'tools' => [
+            'class' => 'backend\modules\tools\Tools',
+        ],
         'users' => [
             'controllerNamespace' => 'vova07\users\controllers\backend'
         ],
@@ -25,9 +27,9 @@ return [
     'components' => [
         'urlManager' => [
             'rules' => [
-                '' => 'site/index',
-                '<_m>/<_c>/<_a>' => '<_m>/<_c>/<_a>',
-                '<_c>/<_a>' => '<_c>/<_a>',
+//                '' => 'site/index',
+                '<_m:[\w\-]+>/<_sm:[\w\-]+>/<_c:[\w\-]+>/<_a:[\w\-]+>' => '<_m>/<_sm>/<_c>/<_a>',
+                '<_m:[\w\-]+>/<_c:[\w\-]+>/<_a:[\w\-]+>' => '<_m>/<_c>/<_a>',
             ]
         ],
 

@@ -73,6 +73,25 @@ echo Menu::widget(
                     ]
                 ]
             ],
+            [
+                'label' => Yii::t('vova07/themes/admin', 'Tools'),
+                'url' => '#',
+//                'icon' => 'fa-gavel',
+//                'visible' => Yii::$app->user->can('administrateRbac') || Yii::$app->user->can('BViewRoles') || Yii::$app->user->can('BViewPermissions') || Yii::$app->user->can('BViewRules'),
+                'items' => [
+                    [
+                        'label' => Yii::t('vova07/themes/admin', 'Town generator'),
+                        'url' =>Yii::$app->urlManager->createAbsoluteUrl('tools/town/index'),
+//                        'visible' => Yii::$app->user->can('administrateRbac') || Yii::$app->user->can('BViewPermissions')
+                    ],
+                    [
+                        'label' => Yii::t('vova07/themes/admin', 'Dice Roller'),
+                        'url' => Yii::$app->urlManager->createAbsoluteUrl('tools/default/index'),
+//                        'visible' => Yii::$app->user->can('administrateRbac') || Yii::$app->user->can('BViewPermissions')
+                    ],
+
+                ]
+            ],
         ]
     ]
 );
